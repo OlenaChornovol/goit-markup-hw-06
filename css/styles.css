@@ -799,8 +799,9 @@ button img {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .modal-close img {
-  top: 20%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10%, 15%);
   width: 18px;
   height: 18px;
   margin: 0;
@@ -889,7 +890,7 @@ textarea:hover,
 textarea:focus {
   border: 1px solid var(--accent-color);
 }
-.modal-form textarea:placeholder {
+textarea::placeholder {
   /*не приміняється*/
   color: rgba(117, 117, 117, 0.5);
 }
@@ -941,6 +942,9 @@ textarea:focus {
   margin-left: 120px; /*не вдається вирівняти по центру*/
 
   background-color: var(--accent-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 
   /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); hover / focus ?*/
   border: none;

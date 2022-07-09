@@ -838,6 +838,7 @@ a .link-icon {
   height: 18px;
   top: 0;
   left: 12px;
+  fill: rgba(33, 33, 33, 1);
   transform: translateY(160%);
 }
 
@@ -860,6 +861,7 @@ a .link-icon {
 }
 
 .modal-form-input:focus {
+  outline: none;
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
@@ -893,14 +895,18 @@ textarea {
   letter-spacing: 0.01em;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 textarea:focus {
+  outline: none;
   border: 1px solid var(--accent-color);
 }
+
+.modal-form:focus-within > textarea {
+  border-color: var(--accent-color);
+}
 textarea::placeholder {
-  /*не приміняється*/
   color: rgba(117, 117, 117, 0.5);
 }
+
 .modal-form-checkbox {
   position: relative;
   display: inline-block;
@@ -942,6 +948,9 @@ textarea::placeholder {
   border: 1px solid var(--accent-color);
   background-color: var(--accent-color);
   fill: var(--accent-white-color);
+}
+.modal-checkbox:focus + .checkbox-icon {
+  border-color: var(--accent-color);
 }
 
 .backdrop-modal-form button {

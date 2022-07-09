@@ -807,11 +807,10 @@ a .link-icon {
 .modal-close svg {
   top: 50%;
   left: 50%;
-  transform: translate(-10%, 15%);
+  transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
   margin: 0;
-  /*не можу вирівняти хрестик в модальному вікні*/
 }
 
 /*форма у модальному вікні*/
@@ -944,6 +943,7 @@ textarea::placeholder {
   border: 2px solid rgba(33, 33, 33, 1);
   border-radius: 2px;
 }
+
 .modal-checkbox:checked + .checkbox-icon {
   border: 1px solid var(--accent-color);
   background-color: var(--accent-color);
